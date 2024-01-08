@@ -6,10 +6,8 @@ var romanToInt = function(s) {
         "L":50,
         "C":100,
         "D":500,
-        "M":1000
-    }
-    let res = 0
-    
+        "M":1000}
+    let res = 0 
     for(i = 0;i<s.length;i++){
         let c = roman[s[i]]
         let n = roman[s[i+1]]
@@ -22,5 +20,4 @@ var romanToInt = function(s) {
     }
     return res
 };
-
 console.log(romanToInt('III'))
