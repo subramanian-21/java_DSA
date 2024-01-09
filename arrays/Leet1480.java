@@ -16,14 +16,12 @@ public class Leet1480 {
     }
 
     static int[] runningSum(int[] nums) {
-        int[] res = new int[nums.length];
-        for (int i = 0; i < res.length; i++) {
-            int n = i;
-          while (n>=0) {
-            res[i]+=nums[n];
-            n--;
-          }
-        }
-        return res;
+      int[] res = new int[nums.length];
+      int a =0;
+      for(int i =0;i<nums.length;i++){
+          res[i] = a+nums[i];
+           a = a+nums[i];
+      }
+      return res;
     }
 }

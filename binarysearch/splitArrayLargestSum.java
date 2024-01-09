@@ -2,7 +2,7 @@ package binarysearch;
 //leet 410
 public class splitArrayLargestSum {
     public static void main(String[] args) {
-        int[] arr = {7,2,5,10,8};
+        int[] arr = {10,20,30,40};
 
         System.out.println(splitArray(arr, 2));
     }
