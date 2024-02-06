@@ -10,11 +10,8 @@ class Leet26 {
     }
 
     // static int removeDuplicates(int[] nums) {
-
     //     ArrayList<Integer> arr = new ArrayList<>();
-
     //     for (int i = 0; i < nums.length; i++) {
-
     //         for (int j = 0; j < arr.size() ; j++) {
     //             if (nums[i] != arr.get(j)) {
     //                 arr.add(nums[i]);
@@ -22,7 +19,6 @@ class Leet26 {
     //                 continue;
     //             }
     //         }
-
     //     }
     //     return arr.size();
     // }
