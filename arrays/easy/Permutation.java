@@ -8,6 +8,7 @@ class Permutation {
     static void generatePermutations(int[] arr, int index) {
         if (index == arr.length - 1) {
             System.out.println(Arrays.toString(arr));
+            return;
         }
         for (int i = index; i < arr.length; i++) {
             swap(arr, index, i);

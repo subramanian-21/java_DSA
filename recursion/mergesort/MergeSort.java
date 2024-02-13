@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 public class MergeSort {
     public static void main(String[] args) {
+    
+        
         System.out.println(Arrays.toString(mergeSort(new int[]{1,0,2,4,5,3,2,1,7,8,3,2,1,4,6})));
     }
 

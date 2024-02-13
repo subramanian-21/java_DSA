@@ -2,7 +2,7 @@ package easy;
 import java.util.Arrays;
 
 /**
- * 
+ * Leet1470
  * Given the array nums consisting of 2n elements in the form
  * [x1,x2,...,xn,y1,y2,...,yn].
  * 
