@@ -1,10 +1,15 @@
 package oops.customDataType;
 
-public class DataType{
+import oops.principles.polymorphism.Circle;
+
+public class DataType extends Circle{
 
     public static void main(String[] args) {
         Student s1 = new Student(10, "subramanian", 100);
         s1.printAttr();
+
+        DataType c = new DataType();
+        System.out.println(c.c);
 
     }   
 }

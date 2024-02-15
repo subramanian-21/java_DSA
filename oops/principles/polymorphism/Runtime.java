@@ -1,9 +1,12 @@
 package oops.principles.polymorphism;
 
-public class Runtime {
+public class Runtime extends Circle {
     public static void main(String[] args) {
-        Shapes c = new Square();
+        Circle c = new Circle();
 
         c.check();
+        System.out.println(c.c);
+
+
     }
 }
