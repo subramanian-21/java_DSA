@@ -31,6 +31,46 @@ public class LL {
         tail = node;
         size++;
     }
+    public void duplicates(){
+        Node  node = head;
+
+        while (node.next != null) {
+            if(node.value == node.next.value){
+                node.next = node.next.next;
+                size--;
+            }else{
+                node = node.next;
+            }
+            
+        }
+        tail=  node;
+        tail.next = null;
+        
+    }
+    public static LL merge(LL h1,LL h2){
+        Node head1 = h1.head;
+        Node head2 = h2.head;
+
+        LL ret = new LL();
+        while (head1 != null && head2!=null) {
+            if(head1.value < head2.value){
+                ret.insertEnd(head1.value);
+                head1 = head1.next;
+            }else{
+                ret.insertEnd(head2.value);
+                head2 = head2.next;
+            }
+        }
+        while (head1 != null) {
+            ret.insertEnd(head1.value);
+            head1 = head1.next;
+        }
+        while (head2 != null) {
+            ret.insertEnd(head2.value);
+            head2 = head2.next;
+        }
+        return ret;
+    }
 
     public void insert(int value, int index) {
 
