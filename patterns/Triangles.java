@@ -1,6 +1,9 @@
 package patterns;
 
 public class Triangles {
+    public static void main(String[] args) {
+        pattern22(5);
+    }
     static void rightTriangle(int h){
         for(int i = 0;i<h;i++){
             for(int j = 0;j<=i;j++){
@@ -234,6 +237,8 @@ public class Triangles {
     static void pattern20(int n){
         int gap = 2*n-1;
         int col = 1;
+        int num = Integer.MIN_VALUE;
+
         for(int i = 0;i<=2*n-1;i++){
             if(i<n){
                 col = i;
@@ -270,7 +275,6 @@ public class Triangles {
             System.out.println();
         }
     }
-
     static void pattern22(int n){
         for(int i = 0;i<2*n-1;i++){
             for(int j = 0;j<2*n-1;j++){
@@ -283,8 +287,6 @@ public class Triangles {
             System.out.println();
         }
     }
-    public static void main(String[] args) {
-        pattern22(5);
-    }
+   
     
 }

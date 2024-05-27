@@ -13,6 +13,8 @@ class Permutation {
         for (int i = index; i < arr.length; i++) {
             swap(arr, index, i);
             generatePermutations(arr, index + 1);
+            swap(arr, index, i);
+
         }
     }
     static void swap(int[] arr, int i, int j) {

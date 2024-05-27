@@ -5,8 +5,6 @@ public class Leet744 {
         char[] arr = {'c','f','j'};
 
         System.out.println(nextGreatestLetter(arr, 'j'));
-
-
     }
 
     static char nextGreatestLetter(char[] letters, char target) {

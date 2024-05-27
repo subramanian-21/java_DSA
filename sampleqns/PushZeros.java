@@ -6,7 +6,7 @@ import java.util.Arrays;
 // output: [1,2,3,0,0]
 public class PushZeros {
 public static void main(String[] args) {
-    int[] arr = {0,1,0,0,1,4,0,2,3};
+    int[] arr = {3,5,0,0,4};
 
     moveZeroes(arr);
     System.out.println(Arrays.toString(arr));

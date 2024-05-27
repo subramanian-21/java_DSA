@@ -7,7 +7,7 @@ import java.util.List;
 
 public class SubSequence {
     public static void main(String[] args) {
-        System.out.println(seqArr("hello",""));
+        System.out.println(seqArr("abc",""));
     }
     static void seq(String up, String p){
         if(up.isEmpty()) {
@@ -28,8 +28,8 @@ public class SubSequence {
         }
 
         char ch = up.charAt(0);
-        List<String> one = seqArr(up.substring(1), p);
-        List<String> two = seqArr(up.substring(1), p+ch);
+        List<String> one = seqArr(up.substring(1), p+ch);
+        List<String> two = seqArr(up.substring(1), p);
         one.addAll(two);
         return one;
     }

@@ -36,19 +36,16 @@ public class Leet1095 {
         else{
             return -1;
         }
-
     }
 
     static int binaryAscendingDescending(int[] arr, int start, int end, int target) {
         boolean isAscending = arr[start] < arr[end];
         int s = start;
         int e = end;
-
         while (s <= e) {
             int mid = s + (e - s) / 2;
 
             if (arr[mid] == target) return mid;
-
 
             if (isAscending) {
                 if (target > arr[mid]) {
@@ -63,7 +60,6 @@ public class Leet1095 {
                     e = mid - 1;
                 }
             }
-
         }
         return -1;
     }

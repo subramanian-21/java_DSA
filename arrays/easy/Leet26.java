@@ -1,12 +1,11 @@
 package easy;
-import java.util.ArrayList;
 import java.util.Arrays;
 
 class Leet26 {
     public static void main(String[] args) {
-        int arr[] = { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
-
-        System.out.println(removeDuplicates(arr));
+        int arr[] = { 1,3,5,7,2,4,6,8};
+        cyclicsort(arr);
+        System.out.println(Arrays.toString(arr));
     }
 
     // static int removeDuplicates(int[] nums) {
@@ -37,7 +36,21 @@ class Leet26 {
         System.out.println(Arrays.toString(nums));
         return e+1;
     }
-
-
+    static void cyclicsort(int[] arr){
+        int i = 0;
+        while (i < arr.length) {
+            int c = arr[i]-1;
+            if(arr[i] == arr[c]){
+                i++;
+            }else{
+                swap(arr,i,c);
+            }
+        }
+    }
+    static void swap(int[] arr, int i,int j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
 }
 

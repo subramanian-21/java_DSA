@@ -18,7 +18,7 @@ public class PhoneNumber {
 
         for (int i = (digit-1)*3; i < digit*3; i++) {
             char ch = (char)('a'+i);
-           arr.addAll( phone(inp.substring(1), out+ch));
+           arr.addAll(phone(inp.substring(1), out+ch));
         }
         return arr;
       
