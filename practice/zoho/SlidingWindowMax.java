@@ -15,7 +15,7 @@ public class SlidingWindowMax {
         Deque<Integer> dq = new ArrayDeque<>();
 
         for (int i = 0; i < arr.length; i++) {
-            if(dq.size() >0 && dq.peek() == i-k){
+            if(!dq.isEmpty() && dq.peek() == i-k){
                 dq.removeFirst();
             }
             while (dq.size()>0 && arr[dq.getLast()] < arr[i]) {

@@ -12,7 +12,7 @@ public class Lru {
     }
     Node head = new Node(0, 0);
     Node tail = new Node(0, 0);
-    private final int CAPACITY;
+    private final int CAPACITY; 
 
     Map<Integer,Node> map;
     public Lru(int capacity){

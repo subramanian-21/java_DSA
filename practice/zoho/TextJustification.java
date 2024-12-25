@@ -4,7 +4,7 @@ public class TextJustification {
     public static void main(String[] args) {
         String str = "hi my name is subramanian iam doing my computer science engineering.";
         String[] arr = str.split(" ");
-        System.out.println(justifyText(arr, 20));
+        System.out.println(justifyText(arr, 200));
     }
     static List<String> justifyText(String[] arr, int maxWidth){
         List<String> li = new ArrayList<>();

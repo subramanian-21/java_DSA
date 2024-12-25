@@ -8,7 +8,7 @@ public class PushZeros {
 public static void main(String[] args) {
     int[] arr = {3,5,0,0,4};
 
-    moveZeroes(arr);
+    func(arr);
     System.out.println(Arrays.toString(arr));
     
 }
@@ -17,6 +17,8 @@ static void  func(int[] arr){
     for(int i = 1;i<arr.length;i++){
         if(arr[j] == 0 && arr[i] !=0){
             swap(arr, i, j);
+            j++;
+        }else{
             j++;
         }
     }
